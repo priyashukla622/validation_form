@@ -1,0 +1,38 @@
+/* body {
+    background-color: lightseagreen;
+} */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container{
+    background-color: pink;
+    padding: 40px;
+    height: 600px;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+#submitbutton{
+    margin-top: -70px;
+}
+
+
+@media(max-width:700px){
+    .form-container{
+        margin-top:-238px ;
+        margin-bottom: 70px;
+        height:580px;
+    }
+    #submitbutton{
+        margin-top: -700px;
+    }
+   
+    
+}

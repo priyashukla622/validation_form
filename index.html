@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="form" onsubmit="return validateform()">
+                <h1 align="center">Registration Form</h1>
+                <label for="fullname">Name:</label>
+                <input type="text" name="fullname" id="fullnameInput" class="form-control" />
+                <br>
+                <span id="fullnameError" class="error-message"></span>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="text" name="email" class="form-control" id="Emailinput">
+                <br>
+                <span id="emailError" class="error-message"></span>
+                <br><br>
+
+                <label for="Password">Password:</label>
+                <input type="Password" name="Password" class="form-control" id="Passwordinput">
+                <br>
+                <span id="PasswordError" class="error-message"></span>
+                <br><br>
+                <label for="ConfirmPassword">ConfirmPassword:</label>
+                <input type="Password" name="ConfirmfirmPassword" class="form-control" id="ConfirmPasswordinput">
+                <br>
+                <span id="ConfirmPasswordError" class="error-message"></span>
+                <br><br>
+                <label for="Age">Age:</label>
+                <input type="number" name="Age" class="form-control" id="Ageinput">
+                <br>
+                <span id="AgeError" class="error-message"></span>
+                <br><br>
+
+                <!-- Other input fields... -->
+
+                <label for="Gender">Gender:</label>
+                <input type="radio" name="Gender" value="male" class="form-control" id="MaleGenderInput">Male
+                <input type="radio" name="Gender" value="female" class="form-control" id="FemaleGenderInput">Female
+                <input type="radio" name="Gender" value="other" class="form-control" id="OtherGenderInput">Other
+                <br><br>
+                <span id="GenderError" class="error-message"></span>
+                <br><br>
+
+                <label for="Interests">Interests:</label>
+                <input type="checkbox" name="Interests" class="form-control" id="Interestsinput">Sports
+                <input type="checkbox" name="Interests" class="form-control" id="Interestsinput">Music
+                <input type="checkbox" name="Interests" class="form-control" id="Interestsinput">Reading
+                <input type="checkbox" name="Interests" class="form-control" id="Interestsinput">Travelling
+                <br><br> 
+                <span id="Interestserror" class="error-message"></span>
+                <br><br>
+                <label for="Country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">Select a Country</option>
+                </select>
+                <br><br>
+                <span id="CountryError" class="error-message"></span>
+
+                <!-- Other form fields... -->
+
+                <button type="submit" id="submitbutton">Submit</button>
+                <button type="reset" id="resetbutton">reset</button>
+            </form>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
